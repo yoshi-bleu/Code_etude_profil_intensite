@@ -4,13 +4,13 @@
 What I used so that new installations won't disturb my system :
 You can create an virtual environment, where all necessary library will be. 
 
-    #macOS/Linux
-python3 -m venv myenv
-source myenv/bin/activate
+#macOS/Linux
+    #python3 -m venv myenv
+    source myenv/bin/activate
 
-    #Windows
-python -m venv myenv
-myenv\Scripts\activate
+#Windows
+    python -m venv myenv
+    myenv\Scripts\activate
 
 You can install via pip all needed libraries you may miss.
 The say needed libraries are called in the file IMPORTS.
