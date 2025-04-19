@@ -1,5 +1,11 @@
 # Code_etude_profil_intensite
 
+## Folders
+
+You need to create your own folder named "Images",
+in which you put R1.fit, B1.fit and G1.fit
+Your three filters after dematrixage from CR3 image.
+
 ## Libraries
 
 What I used so that new installations won't disturb my system :
