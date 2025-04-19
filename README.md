@@ -3,7 +3,9 @@
 ## Folders
 
 You need to create your own folder named "Images",
+
 in which you put R1.fit, B1.fit and G1.fit
+
 Your three filters after dematrixage from CR3 image.
 
 ## Libraries
