@@ -11,7 +11,7 @@ Your three filters after dematrixage from CR3 image.
 ## Libraries
 
 What I used so that new installations won't disturb my system :
-You can create an virtual environment, where all necessary library will be. 
+You can create a virtual environment, where all necessary library will be. 
 
 macOS/Linux
 
