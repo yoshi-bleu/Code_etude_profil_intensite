@@ -102,7 +102,7 @@ print("R/G =", np.mean(I[0]) / np.mean(I[1]))
 print("R/B =", np.mean(I[0]) / np.mean(I[2]))
 print("G/B =", np.mean(I[1]) / np.mean(I[2]))
 
-ratios = np.array["R/G","R/B","G/B"]
+ratios = np.array(["R/G","R/B","G/B"])
 Valeurs_ratios = np.array([np.mean(I[0]) / np.mean(I[1]), np.mean(I[0]) / np.mean(I[2]), np.mean(I[1]) / np.mean(I[2])])
 # Enregistrer les ratios dans un fichier CSV
 ratios_df = pd.DataFrame({"Ratios": ratios, "Valeurs": Valeurs_ratios})
