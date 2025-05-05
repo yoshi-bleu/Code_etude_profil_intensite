@@ -68,6 +68,10 @@ Rfin = np.array([np.mean(i) for i in donneesR])
 Gfin = np.array([np.mean(i) for i in donneesG])
 Bfin = np.array([np.mean(i) for i in donneesB])
 
+dRfin = np.array(np.sqrt(1/(11*10))*np.sqrt(np.sum(np.array([(Rfin[i] - donneesR[i])**2 for i in range(0,12)]))) for donneesR in donneesR.T)
+dGfin = np.array(np.sqrt(1/(11*10))*np.sqrt(np.sum(np.array([(Gfin[i] - donneesG[i])**2 for i in range(0,12)]))) for donneesG in donneesG.T)
+dBfin = np.array(np.sqrt(1/(11*10))*np.sqrt(np.sum(np.array([(Bfin[i] - donneesB[i])**2 for i in range(0,12)]))) for donneesB in donneesB.T)
+
 # Enregistrer les moyennes dans des fichiers CSV
 pd.DataFrame({"Position": data["Position"], "Intensité Moyenne": Rfin}).to_csv(resultats_dir / "R_moyenne.csv", index=False)
 pd.DataFrame({"Position": data["Position"], "Intensité Moyenne": Gfin}).to_csv(resultats_dir / "G_moyenne.csv", index=False)
@@ -82,6 +86,11 @@ data = pd.read_csv(resultats_dir / "profil_R0.csv", header=None, names=["Positio
 plt.plot(data["Position"], Rfin, label=f"Profil R", color='r')
 plt.plot(data["Position"], Gfin, label=f"Profil G", color='g')
 plt.plot(data["Position"], Bfin, label=f"Profil B", color='b')
+
+# Tracer les incertitudes 
+plt.errorbar(data["Position"], Rfin, yerr=dRfin, marker='+',color='r')
+plt.errorbar(data["Position"], Gfin, yerr=dGfin, marker='+',color='g')
+plt.errorbar(data["Position"], Bfin, yerr=dBfin, marker='+',color='b')
 # Ajouter les détails du graphique
 plt.title("Profils d'intensités moyennes (R, G, B)", fontsize=16)
 plt.xlabel("Position (pixels)", fontsize=14)
