@@ -38,7 +38,6 @@ https://fiji.sc
 
 To install all needed dependencies, you can execute in the terminal:
 
-```bash
 pip install -r imports.txt 
 
 ## Versions
