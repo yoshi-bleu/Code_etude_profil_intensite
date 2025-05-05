@@ -41,6 +41,7 @@ output_dir = base_dir / "resultats"
 output_dir.mkdir(exist_ok=True)
 
 # Coordonnées du profil principal (en pixels)
+from coordonnees import x1, y1, x2, y2
 x1, y1 = 2430, 2700
 x2, y2 = 2580, 1925
 
