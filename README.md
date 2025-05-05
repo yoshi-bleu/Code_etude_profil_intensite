@@ -36,6 +36,11 @@ There is a Python library opensource that you need to download.
 Download the folder Fiji in the global folder(code_etude_profil_intensite): 
 https://fiji.sc
 
+To install all needed dependencies, you can execute in the terminal:
+
+```bash
+pip install -r imports.txt 
+
 ## Versions
 
 imageJ is an old application, so version problems may arise.
