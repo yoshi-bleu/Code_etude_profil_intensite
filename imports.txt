@@ -1,0 +1,8 @@
+pandas
+matplotlib
+numpy
+imagej
+astropy
+scyjava
+pathlib
+astropy

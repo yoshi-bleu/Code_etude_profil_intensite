@@ -1,0 +1,36 @@
+----------
+Pré-requis :
+
+zulu21.42.19-ca-jdk21.0.7-win_x64
+télécharger python window
+télécharger avec adoptium.net Java 11 fichier .msi en JDK
+télécharger Fiji https://fiji.sc/
+aller dans paramètre application python, modify, environnement variable,
+
+----------
+
+à faire une fois seulement, pour créer le fichier:
+(sur window)
+cd emplacement du fichier (autant de fois que nécessaire, on peut s'aider de "ls")
+python -m venv myenv
+myenv\Scripts\activate
+pip install -r imports.txt
+
+(sur mac)
+cd emplacement du fichier (autant de fois que nécessaire, on peut s'aider de "ls")
+python -m venv myenv
+source myenv/bin/activate
+pip install -r imports.txt
+
+----------
+
+En général pour utiliser le programme:
+
+cd emplacement du fichier (autant de fois que nécessaire, on peut s'aider de "ls")
+myenv\Scripts\activate
+py assemblage.py
+
+mac :
+cd emplacement du fichier (autant de fois que nécessaire, on peut s'aider de "ls")
+source myenv/bin/activate
+python3 assemblage.py
